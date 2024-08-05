@@ -1,13 +1,10 @@
 import {
-  Categories,
   Container,
   Filters,
-  SortPopup,
+  ProductsGroupList,
   Title,
   TopBar,
 } from "@/components/shared"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
 
 export default function Home() {
   return (
@@ -25,7 +22,82 @@ export default function Home() {
           </div>
 
           <div className="flex-1">
-            <div className="flex flex-col gap-16">Список товаров</div>
+            <div className="flex flex-col gap-16">
+              {/* <ProductCard
+                id={1}
+                imageUrl="https://media.dodostatic.net/image/r:292x292/11EE7D61BB2BD856BD5DFD71FB7D4210.jpg"
+                name=""
+                price={0}
+              /> */}
+              <ProductsGroupList
+                title="Пиццы"
+                items={[
+                  {
+                    id: 1,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D61BB2BD856BD5DFD71FB7D4210.jpg",
+                    name: "Пиццы",
+                    items: [{ price: 500 }],
+                  },
+                  {
+                    id: 2,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D61BB2BD856BD5DFD71FB7D4210.jpg",
+                    name: "Пиццы",
+                    items: [{ price: 500 }],
+                  },
+                  {
+                    id: 3,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D61BB2BD856BD5DFD71FB7D4210.jpg",
+                    name: "Пиццы",
+                    items: [{ price: 500 }],
+                  },
+                  {
+                    id: 4,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D61BB2BD856BD5DFD71FB7D4210.jpg",
+                    name: "Пиццы",
+                    items: [{ price: 500 }],
+                  },
+                ]}
+                categoryId={1}
+              />
+              <ProductsGroupList
+                title="Комбо"
+                items={[
+                  {
+                    id: 1,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D61BB2BD856BD5DFD71FB7D4210.jpg",
+                    name: "Пиццы",
+                    items: [{ price: 500 }],
+                  },
+                  {
+                    id: 2,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D61BB2BD856BD5DFD71FB7D4210.jpg",
+                    name: "Пиццы",
+                    items: [{ price: 500 }],
+                  },
+                  {
+                    id: 3,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D61BB2BD856BD5DFD71FB7D4210.jpg",
+                    name: "Пиццы",
+                    items: [{ price: 500 }],
+                  },
+                  {
+                    id: 4,
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D61BB2BD856BD5DFD71FB7D4210.jpg",
+                    name: "Пиццы",
+                    items: [{ price: 500 }],
+                  },
+                ]}
+                categoryId={2}
+              />
+            </div>
           </div>
         </div>
       </Container>
