@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -10,7 +10,7 @@ html {
   html {
     scroll-behavior: auto;
   }
-}
+} */
 
 @layer base {
   :root {
